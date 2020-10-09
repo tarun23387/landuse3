@@ -1,0 +1,1948 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from demo.themekita.com/atlantis/livepreview/examples/demo2/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 17 Sep 2020 10:45:32 GMT -->
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Atlantis Bootstrap 4 Admin Dashboard</title>
+	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+	<link rel="icon" href="../assets/img/icon.ico" type="image/x-icon"/>
+
+	<!-- Fonts and icons -->
+	<script src="../assets/js/plugin/webfont/webfont.min.js"></script>
+	<script>
+		WebFont.load({
+			google: {"families":["Lato:300,400,700,900"]},
+			custom: {"families":["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons"], urls: ['../assets/css/fonts.min.css']},
+			active: function() {
+				sessionStorage.fonts = true;
+			}
+		});
+	</script>
+
+	<!-- CSS Files -->
+	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../assets/css/atlantis.css">
+
+	<link rel="stylesheet" href="../assets/sass/atlantis/layouts.scss">
+
+	<!-- CSS Just for demo purpose, don't include it in your project -->
+	<link rel="stylesheet" href="../assets/css/demo.css">
+</head>
+<body data-background-color="dark">
+	<div class="wrapper">
+		<div class="main-header">
+			<!-- Logo Header -->
+			<div class="logo-header" data-background-color="dark2">
+				
+				<a href="index-2.html" class="logo">
+					<img src="../assets/img/logo.svg" alt="navbar brand" class="navbar-brand">
+				</a>
+				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon">
+						<i class="icon-menu"></i>
+					</span>
+				</button>
+				<button class="topbar-toggler more"><i class="icon-options-vertical"></i></button>
+				<div class="nav-toggle">
+					<button class="btn btn-toggle toggle-sidebar">
+						<i class="icon-menu"></i>
+					</button>
+				</div>
+			</div>
+			<!-- End Logo Header -->
+
+			<!-- Navbar Header -->
+			<nav class="navbar navbar-header navbar-expand-lg" data-background-color="dark">
+				
+				<div class="container-fluid">
+					<div class="collapse" id="search-nav">
+						<form class="navbar-left navbar-form nav-search mr-md-3">
+							
+						</form>
+					</div>
+					<ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
+						<li class="nav-item toggle-nav-search hidden-caret">
+							<a class="nav-link" data-toggle="collapse" href="#search-nav" role="button" aria-expanded="false" aria-controls="search-nav">
+								<i class="fa fa-search"></i>
+							</a>
+						</li>
+					
+						<li class="nav-item dropdown hidden-caret">
+							<a class="nav-link" data-toggle="dropdown" href="#" aria-expanded="false">
+								<i class="fas fa-layer-group"></i>
+							</a>
+							<div class="dropdown-menu quick-actions quick-actions-info animated fadeIn">
+								<div class="quick-actions-header">
+									<span class="title mb-1">Quick Actions</span>
+									<span class="subtitle op-8">Shortcuts</span>
+								</div>
+								<div class="quick-actions-scroll scrollbar-outer">
+									<div class="quick-actions-items">
+										<div class="row m-0">
+											<a class="col-6 col-md-4 p-0" href="#">
+												<div class="quick-actions-item">
+													<div class="avatar-item bg-danger rounded-circle">
+														<i class="far fa-calendar-alt"></i>
+													</div>
+													<span class="text">Calendar</span>
+												</div>
+											</a>
+											<a class="col-6 col-md-4 p-0" href="#">
+												<div class="quick-actions-item">
+													<div class="avatar-item bg-warning rounded-circle">
+														<i class="fas fa-map"></i>
+													</div>
+													<span class="text">Maps</span>
+												</div>
+											</a>
+											<a class="col-6 col-md-4 p-0" href="#">
+												<div class="quick-actions-item">
+													<div class="avatar-item bg-info rounded-circle">
+														<i class="fas fa-file-excel"></i>
+													</div>
+													<span class="text">Reports</span>
+												</div>
+											</a>
+											<a class="col-6 col-md-4 p-0" href="#">
+												<div class="quick-actions-item">
+													<div class="avatar-item bg-success rounded-circle">
+														<i class="fas fa-envelope"></i>
+													</div>
+													<span class="text">Emails</span>
+												</div>
+											</a>
+											<a class="col-6 col-md-4 p-0" href="#">
+												<div class="quick-actions-item">
+													<div class="avatar-item bg-primary rounded-circle">
+														<i class="fas fa-file-invoice-dollar"></i>
+													</div>
+													<span class="text">Invoice</span>
+												</div>
+											</a>
+											<a class="col-6 col-md-4 p-0" href="#">
+												<div class="quick-actions-item">
+													<div class="avatar-item bg-secondary rounded-circle">
+														<i class="fas fa-credit-card"></i>
+													</div>
+													<span class="text">Payments</span>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					
+						<li class="nav-item dropdown hidden-caret">
+							<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false">
+								<div class="avatar-sm">
+									<img src="../assets/img/profile.jpg" alt="..." class="avatar-img rounded-circle">
+								</div>
+							</a>
+							<ul class="dropdown-menu dropdown-user animated fadeIn">
+								<div class="dropdown-user-scroll scrollbar-outer">
+									<li>
+										<div class="user-box">
+											<div class="avatar-lg"><img src="../assets/img/profile.jpg" alt="image profile" class="avatar-img rounded"></div>
+											<div class="u-text">
+												<h4>Hizrian</h4>
+												<p class="text-muted">hello@example.com</p><a href="profile.html" class="btn btn-xs btn-secondary btn-sm">View Profile</a>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item" href="#">My Profile</a>
+										<a class="dropdown-item" href="#">My Balance</a>
+										<a class="dropdown-item" href="#">Inbox</a>
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item" href="#">Account Setting</a>
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item" href="#">Logout</a>
+									</li>
+								</div>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<!-- End Navbar -->
+		</div>
+
+		<!-- Sidebar -->
+		<div class="sidebar sidebar-style-2" data-background-color="dark2">
+			<div class="sidebar-wrapper scrollbar scrollbar-inner">
+				<div class="sidebar-content">
+					<div class="user">
+						<div class="avatar-sm float-left mr-2">
+							<img src="../assets/img/profile.jpg" alt="..." class="avatar-img rounded-circle">
+						</div>
+						<div class="info">
+							<a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
+								<span>
+									Hizrian
+									<span class="user-level">Administrator</span>
+									<span class="caret"></span>
+								</span>
+							</a>
+							<div class="clearfix"></div>
+
+							<div class="collapse in" id="collapseExample">
+								<ul class="nav">
+									<li>
+										<a href="#profile">
+											<span class="link-collapse">My Profile</span>
+										</a>
+									</li>
+									<li>
+										<a href="#edit">
+											<span class="link-collapse">Edit Profile</span>
+										</a>
+									</li>
+									<li>
+										<a href="#settings">
+											<span class="link-collapse">Settings</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<ul class="nav nav-primary">
+						<li class="nav-item active">
+							<a href="../demo2/index.html">
+								<!-- <a data-toggle="collapse" href="#dashboard" class="collapsed" aria-expanded="false"> -->
+								<i class="fas fa-home"></i>
+								<p>All Projects</p>
+								<!-- <span class="caret"></span> -->
+							</a>
+
+						</li>
+
+						<li class="nav-item active">
+							<a data-toggle="collapse" href="#dashboard-1" class="collapsed" aria-expanded="false">
+								<i class="fas fa-home"></i>
+								<p>Ongoing Projects</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="dashboard-1">
+								<ul class="nav nav-collapse">
+
+
+
+									<li class="nav-item" style="padding: 0px 0px;">
+										<a data-toggle="collapse" href="#base-1">
+											<i class="fas fa-layer-group"></i>
+											<p>U.C.M.P.</p>
+
+											<span class="caret"></span>
+										</a>
+										<div class="collapse" id="base-1">
+											<ul class="nav nav-collapse">
+												<li>
+													<a href="../demo2/Ayodhya_ucmp.html">
+														<span class="sub-item">Ayodhya Development Authority</span>
+													</a>
+												</li>
+												<li>
+													<a href="../demo2/Kanpur_ucmp.html">
+														<span class="sub-item">Kanpur Development Authority</span>
+													</a>
+												</li>
+												<li>
+													<a href="../demo2/Varanasi_ucmp.html">
+														<span class="sub-item">Varanasi Development Authority</span>
+													</a>
+												</li>
+												<li>
+													<a href="../demo2/Basti_ucmp.html">
+														<span class="sub-item">Basti Development Authority</span>
+													</a>
+												</li>
+												<li>
+													<a href="../demo2/meerut_ucmp.html">
+														<span class="sub-item">Meerut Development Authority</span>
+													</a>
+												</li>
+
+												<li>
+													<a href="../demo2/Gaziabad_ucmp.html">
+														<span class="sub-item">
+															Gaziabad Development Authority</span>
+													</a>
+												</li>
+
+
+												<li>
+													<a href="../demo2/Hapur_ucmp.html">
+														<span class="sub-item">
+															Hapur-Pilkhuwa Development Authority</span>
+													</a>
+												</li>
+
+												<li>
+													<a href="../demo2/Mathura_ucmp.html">
+														<span class="sub-item">
+															Mathura Development Authority</span>
+													</a>
+												</li>
+
+											</ul>
+										</div>
+									</li>
+
+
+
+
+
+
+
+									<li class="nav-item" style="padding: 0px 0px;">
+										<a data-toggle="collapse" href="#base-2">
+											<i class="fas fa-layer-group"></i>
+											<p>Developmennt Authority <br />other Projects</p>
+
+											<span class="caret"></span>
+										</a>
+										<div class="collapse" id="base-2">
+											<ul class="nav nav-collapse">
+												<li>
+													<a href="../demo2/BAREILLY_daop.html">
+														<span class="sub-item">Bareilly Development Authority</span>
+													</a>
+												</li>
+												<li>
+													<a href="../demo2/Unnao_daop.html">
+														<span class="sub-item">Unnao-Shuklaganj Development Authority</span>
+													</a>
+												</li>
+												<li>
+													<a href="../demo2/Moradabad_daop.html">
+														<span class="sub-item">Moradabad Development Authority</span>
+													</a>
+												</li>
+												<li>
+													<a href="../demo2/Jhansi_daop.html">
+														<span class="sub-item">Jhansi Development Authority</span>
+													</a>
+												</li>
+
+
+												<li>
+													<a href="../demo2/Agra_daop.html">
+														<span class="sub-item">Agra Development Authority</span>
+													</a>
+												</li>
+
+												<li>
+													<a href="../demo2/Muzaffar_Nagar_daop.html">
+														<span class="sub-item">Muzaffar Nagar Development Authority</span>
+													</a>
+												</li>
+												<li>
+													<a href="../demo2/Saharanpur_daop.html">
+														<span class="sub-item">Saharanpur  Development Authority</span>
+													</a>
+												</li>
+
+												<li>
+													<a href="../demo2/Raebareli_daop.html">
+														<span class="sub-item">Raebareli Development Authority</span>
+													</a>
+												</li>
+
+												<li>
+													<a href="../demo2/Mathura-Vrindavan_daop.html">
+														<span class="sub-item">Mathura-Vrindavan Development Authority</span>
+													</a>
+												</li>
+
+												<li>
+													<a href="../demo2/Rampur_daop.html">
+														<span class="sub-item">Rampur Development Authority</span>
+													</a>
+												</li>
+
+
+
+											</ul>
+										</div>
+									</li>
+
+
+
+
+
+
+
+
+									<li>
+										<a href="../demo2/Gaziabad.html">
+											<span class="sub-item">Gaziabad Development Authority</span>
+										</a>
+									</li>
+									<li>
+										<a href="../demo2/Sada.html">
+											<span class="sub-item">SADA Project </span>
+										</a>
+									</li>
+
+								</ul>
+							</div>
+
+
+						</li>
+
+						<li class="nav-item active">
+							<a data-toggle="collapse" href="#dashboard-2" class="collapsed" aria-expanded="false">
+								<i class="fas fa-home"></i>
+								<p>Completed Projects</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="dashboard-2">
+								<ul class="nav nav-collapse">
+
+
+
+									<li class="nav-item" style="padding: 0px 0px;">
+										<a data-toggle="collapse" href="#base-3">
+											<i class="fas fa-layer-group"></i>
+											<p>Housing Board Projects</p>
+
+											<span class="caret"></span>
+										</a>
+										<div class="collapse" id="base-3">
+											<ul class="nav nav-collapse">
+												<li>
+													<a href="../demo2/Varanasi_HBP.html">
+														<span class="sub-item">
+															U.P. Awas and Vikas Parishad,Varanasi</span>
+													</a>
+												</li>
+												
+											</ul>
+										</div>
+									</li>
+
+
+
+									<li>
+										<a href="../demo2/BusRoot.html">
+											<span class="sub-item">Electric Bus Root Mapping</span>
+										</a>
+									</li>
+									<li>
+										<a href="../demo2/Rera.html">
+											<span class="sub-item">RERA Project</span>
+										</a>
+									</li>
+
+								</ul>
+							</div>
+						</li>
+
+
+
+
+
+
+
+
+
+
+						<li class="nav-section">
+							<span class="sidebar-mini-icon">
+								<i class="fa fa-ellipsis-h"></i>
+							</span>
+							<h4 class="text-section">Components</h4>
+						</li>
+
+						<li class="nav-item">
+							<a data-toggle="collapse" href="#maps">
+								<i class="fas fa-map-marker-alt"></i>
+								<p>Maps</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="maps">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="maps/googlemaps.html">
+											<span class="sub-item">Google Maps</span>
+										</a>
+									</li>
+									<li>
+										<a href="maps/fullscreenmaps.html">
+											<span class="sub-item">Full Screen Maps</span>
+										</a>
+									</li>
+									<li>
+										<a href="maps/jqvmap.html">
+											<span class="sub-item">JQVMap</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- End Sidebar -->
+
+		<div class="main-panel">
+			<div class="container">
+				<div class="page-inner">
+					<h4 class="page-title" style="color: powderblue;">Gaziabad Development Authority (U.C.M.P.)</h4>
+					<div class="row">
+
+						<div class="col-md-12">
+							<div class="card">
+								<div class="card-header">
+									<h4 class="card-title">Project Detail</h4>
+								</div>
+								<div class="card-body">
+									<ul class="nav nav-pills nav-secondary nav-pills-no-bd" id="pills-tab-without-border" role="tablist">
+										<li class="nav-item">
+											<a class="nav-link active" id="pills-home-tab-nobd" data-toggle="pill" href="#pills-home-nobd" role="tab" aria-controls="pills-home-nobd" aria-selected="true">Objective</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" id="pills-profile-tab-nobd" data-toggle="pill" href="#pills-profile-nobd" role="tab" aria-controls="pills-profile-nobd" aria-selected="false">Methodology</a>
+										</li>
+										
+									</ul>
+									<div class="tab-content mt-2 mb-3" id="pills-without-border-tabContent">
+										<div class="tab-pane fade show active paragraph" id="pills-home-nobd" role="tabpanel" aria-labelledby="pills-home-tab-nobd">
+											<br/>
+											<ul>
+								<li>To demarcate the boundaries of unauthorized colonies based on information procured by Remote sensing satellite data.</li>
+								<li>Along with the above data, information provided by GDA with the field information was put in use.</li>
+								</ul>
+
+										</div>
+										<div class="tab-pane fade paragraph" id="pills-profile-nobd" role="tabpanel" aria-labelledby="pills-profile-tab-nobd">
+											<br/>
+											<ul>
+												<li>Overlaying of the Gaziabad Development Authority Area boundary on the high-resolution satellite data.</li>
+												<li>Overlaying of the layout plans of the authorized colonies under GDA in order to segregate the unauthorized areas.</li>
+												<li>Demarcation of the boundaries of unauthorized colonies based on the information provided by GDA.</li>
+												<li>A joint field verification (RSAC team + GDA team) in the entire study area, in order to finalized the boundaries of unauthorized colonies.</li>
+												<li>Finalization of boundaries in the lab and final map output generation.</li>
+											</ul>	
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="col-md-12">
+							<div class="card">
+								<div class="card-header">
+									<h4 class="card-title">Output</h4>	
+								</div>
+								<div class="row">
+									
+									
+
+								
+
+								
+
+
+
+
+
+
+
+
+
+
+
+												
+
+
+
+													
+
+
+														<div class='list-group gallery'>
+															<div class="col-sm-6 col-lg-3">
+																<div class="card">
+																	<a  href="../assets/img/Zone_4exl.jpg" data-fancybox="images" 
+																	data-caption="Zone_4 List"> <img src="../assets/img/Zone_4exl_sm.jpg"			
+																			  alt="Second" title="Sec"> </a>											
+																</div>
+															</div>
+						
+														
+															
+															</div>
+
+
+
+															<div class='list-group gallery'>
+																<div class="col-sm-6 col-lg-3">
+																	<div class="card">
+																		<a  href="../assets/img/G_ucmp_CHAMAN COLONY_lg.jpg" data-fancybox="images" 
+																		data-caption="Zone_1"> <img src="../assets/img/G_ucmp_CHAMAN COLONY_sm.jpg"			
+																				  alt="Second" title="Sec"> </a>											
+																	</div>
+																</div>
+							
+															
+																
+																</div>
+
+																
+
+																<div class='list-group gallery'>
+																	<div class="col-sm-6 col-lg-3">
+																		<div class="card">
+																			<a  href="../assets/img/G_ucmp_PRATAP VIHAR_lg.jpg" data-fancybox="images" 
+																			data-caption="Zone_2"> <img src="../assets/img/G_ucmp_PRATAP VIHAR_sm.jpg"			
+																					  alt="Second" title="Sec"> </a>											
+																		</div>
+																	</div>
+								
+																
+																	
+																	</div>
+
+
+
+																	
+																<div class='list-group gallery'>
+																	<div class="col-sm-6 col-lg-3">
+																		<div class="card">
+																			<a  href="../assets/img/gaziabad/G_u_1_lg.jpg" data-fancybox="images" 
+																			data-caption="Zone_2"> <img src="../assets/img/gaziabad/G_u_1_sm.jpg"			
+																					  alt="Second" title="Sec"> </a>											
+																		</div>
+																	</div>
+								
+																
+																	
+																	</div>
+
+
+
+																	
+																<div class='list-group gallery'>
+																	<div class="col-sm-6 col-lg-3">
+																		<div class="card">
+																			<a  href="../assets/img/gaziabad/G_u_2_lg.jpg" data-fancybox="images" 
+																			data-caption="Zone_2"> <img src="../assets/img/gaziabad/G_u_2_sm.jpg"			
+																					  alt="Second" title="Sec"> </a>											
+																		</div>
+																	</div>
+								
+																
+																	
+																	</div>
+
+
+
+																	
+																<div class='list-group gallery'>
+																	<div class="col-sm-6 col-lg-3">
+																		<div class="card">
+																			<a  href="../assets/img/gaziabad/G_u_3_lg.jpg" data-fancybox="images" 
+																			data-caption="Zone_2"> <img src="../assets/img/gaziabad/G_u_3_sm.jpg"			
+																					  alt="Second" title="Sec"> </a>											
+																		</div>
+																	</div>
+								
+																
+																	
+																	</div>
+
+
+
+																	
+																<div class='list-group gallery'>
+																	<div class="col-sm-6 col-lg-3">
+																		<div class="card">
+																			<a  href="../assets/img/gaziabad/G_u_4_lg.jpg" data-fancybox="images" 
+																			data-caption="Zone_2"> <img src="../assets/img/gaziabad/G_u_4_sm.jpg"			
+																					  alt="Second" title="Sec"> </a>											
+																		</div>
+																	</div>
+								
+																
+																	
+																	</div>
+
+
+																	
+																<div class='list-group gallery'>
+																	<div class="col-sm-6 col-lg-3">
+																		<div class="card">
+																			<a  href="../assets/img/gaziabad/G_u_5_lg.jpg" data-fancybox="images" 
+																			data-caption="Zone_2"> <img src="../assets/img/gaziabad/G_u_5_sm.jpg"			
+																					  alt="Second" title="Sec"> </a>											
+																		</div>
+																	</div>
+								
+																
+																	
+																	</div>
+
+
+																	
+																<div class='list-group gallery'>
+																	<div class="col-sm-6 col-lg-3">
+																		<div class="card">
+																			<a  href="../assets/img/gaziabad/G_u_6_lg.jpg" data-fancybox="images" 
+																			data-caption="Zone_2"> <img src="../assets/img/gaziabad/G_u_6_sm.jpg"			
+																					  alt="Second" title="Sec"> </a>											
+																		</div>
+																	</div>
+								
+																
+																	
+																	</div>
+
+
+																	
+																<div class='list-group gallery'>
+																	<div class="col-sm-6 col-lg-3">
+																		<div class="card">
+																			<a  href="../assets/img/gaziabad/G_u_7_lg.jpg" data-fancybox="images" 
+																			data-caption="Zone_2"> <img src="../assets/img/gaziabad/G_u_7_sm.jpg"			
+																					  alt="Second" title="Sec"> </a>											
+																		</div>
+																	</div>
+								
+																
+																	
+																	</div>
+
+
+																	
+																<div class='list-group gallery'>
+																	<div class="col-sm-6 col-lg-3">
+																		<div class="card">
+																			<a  href="../assets/img/gaziabad/G_u_8_lg.jpg" data-fancybox="images" 
+																			data-caption="Zone_2"> <img src="../assets/img/gaziabad/G_u_8_sm.jpg"			
+																					  alt="Second" title="Sec"> </a>											
+																		</div>
+																	</div>
+								
+																
+																	
+																	</div>
+
+
+																	
+																<div class='list-group gallery'>
+																	<div class="col-sm-6 col-lg-3">
+																		<div class="card">
+																			<a  href="../assets/img/gaziabad/G_u_9_lg.jpg" data-fancybox="images" 
+																			data-caption="Zone_2"> <img src="../assets/img/gaziabad/G_u_9_sm.jpg"			
+																					  alt="Second" title="Sec"> </a>											
+																		</div>
+																	</div>
+								
+																
+																	
+																	</div>
+
+
+																	
+																<div class='list-group gallery'>
+																	<div class="col-sm-6 col-lg-3">
+																		<div class="card">
+																			<a  href="../assets/img/gaziabad/G_u_10_lg.jpg" data-fancybox="images" 
+																			data-caption="Zone_2"> <img src="../assets/img/gaziabad/G_u_10_sm.jpg"			
+																					  alt="Second" title="Sec"> </a>											
+																		</div>
+																	</div>
+								
+																
+																	
+																	</div>
+
+
+																	
+																<div class='list-group gallery'>
+																	<div class="col-sm-6 col-lg-3">
+																		<div class="card">
+																			<a  href="../assets/img/gaziabad/G_u_11_lg.jpg" data-fancybox="images" 
+																			data-caption="Zone_2"> <img src="../assets/img/gaziabad/G_u_11_sm.jpg"			
+																					  alt="Second" title="Sec"> </a>											
+																		</div>
+																	</div>
+								
+																
+																	
+																	</div>
+		
+
+
+
+
+
+
+
+
+
+
+								</div>
+							</div>
+						</div>
+
+
+
+						<div class="col-md-6">
+							<div class="card">
+								<div class="card-header">
+									<div class="card-title">Financial Value</div>
+								</div>
+								<div class="card-body">
+									<div class="chart-container">
+										<canvas id="pieChart" style="width: 50%; height: 50%"></canvas>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="card">
+								<div class="card-header">
+									<div class="card-title">Work Status</div>
+								</div>
+								<div class="card-body">
+									<div class="chart-container">
+										<canvas id="doughnutChart" style="width: 50%; height: 50%"></canvas>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+					
+
+					
+
+					
+					</div>
+				</div>
+			</div>
+			<footer class="footer">
+				<div class="container-fluid">
+					<nav class="pull-left">
+						<ul class="nav">
+							<li class="nav-item">
+								<a class="nav-link" href="#">
+									Help
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">
+									Licenses
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="copyright ml-auto">
+						2020, Made with <i class="fa fa-heart heart text-danger"></i> by <a href="#">Tarun Singh</a>
+					</div>				
+				</div>
+			</footer>
+		</div>
+
+
+
+		<div class="quick-sidebar">
+			<a href="#" class="close-quick-sidebar">
+				<i class="flaticon-cross"></i>
+			</a>
+			<div class="quick-sidebar-wrapper">
+				<ul class="nav nav-tabs nav-line nav-color-secondary" role="tablist">
+					<li class="nav-item"> <a class="nav-link active show" data-toggle="tab" href="#messages" role="tab" aria-selected="true">Messages</a> </li>
+					<li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#tasks" role="tab" aria-selected="false">Tasks</a> </li>
+					<li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#settings" role="tab" aria-selected="false">Settings</a> </li>
+				</ul>
+				<div class="tab-content mt-3">
+					<div class="tab-chat tab-pane fade show active" id="messages" role="tabpanel">
+						<div class="messages-contact">
+							<div class="quick-wrapper">
+								<div class="quick-scroll scrollbar-outer">
+									<div class="quick-content contact-content">
+										<span class="category-title mt-0">Contacts</span>
+										<div class="avatar-group">
+											<div class="avatar">
+												<img src="../assets/img/jm_denis.jpg" alt="..." class="avatar-img rounded-circle border border-white">
+											</div>
+											<div class="avatar">
+												<img src="../assets/img/chadengle.jpg" alt="..." class="avatar-img rounded-circle border border-white">
+											</div>
+											<div class="avatar">
+												<img src="../assets/img/mlane.jpg" alt="..." class="avatar-img rounded-circle border border-white">
+											</div>
+											<div class="avatar">
+												<img src="../assets/img/talha.jpg" alt="..." class="avatar-img rounded-circle border border-white">
+											</div>
+											<div class="avatar">
+												<span class="avatar-title rounded-circle border border-white">+</span>
+											</div>
+										</div>
+										<span class="category-title">Recent</span>
+										<div class="contact-list contact-list-recent">
+											<div class="user">
+												<a href="#">
+													<div class="avatar avatar-online">
+														<img src="../assets/img/jm_denis.jpg" alt="..." class="avatar-img rounded-circle border border-white">
+													</div>
+													<div class="user-data">
+														<span class="name">Jimmy Denis</span>
+														<span class="message">How are you ?</span>
+													</div>
+												</a>
+											</div>
+											<div class="user">
+												<a href="#">
+													<div class="avatar avatar-offline">
+														<img src="../assets/img/chadengle.jpg" alt="..." class="avatar-img rounded-circle border border-white">
+													</div>
+													<div class="user-data">
+														<span class="name">Chad</span>
+														<span class="message">Ok, Thanks !</span>
+													</div>
+												</a>
+											</div>
+											<div class="user">
+												<a href="#">
+													<div class="avatar avatar-offline">
+														<img src="../assets/img/mlane.jpg" alt="..." class="avatar-img rounded-circle border border-white">
+													</div>
+													<div class="user-data">
+														<span class="name">John Doe</span>
+														<span class="message">Ready for the meeting today with...</span>
+													</div>
+												</a>
+											</div>
+										</div>
+										<span class="category-title">Other Contacts</span>
+										<div class="contact-list">
+											<div class="user">
+												<a href="#">
+													<div class="avatar avatar-online">
+														<img src="../assets/img/jm_denis.jpg" alt="..." class="avatar-img rounded-circle border border-white">
+													</div>
+													<div class="user-data2">
+														<span class="name">Jimmy Denis</span>
+														<span class="status">Online</span>
+													</div>
+												</a>
+											</div>
+											<div class="user">
+												<a href="#">
+													<div class="avatar avatar-offline">
+														<img src="../assets/img/chadengle.jpg" alt="..." class="avatar-img rounded-circle border border-white">
+													</div>
+													<div class="user-data2">
+														<span class="name">Chad</span>
+														<span class="status">Active 2h ago</span>
+													</div>
+												</a>
+											</div>
+											<div class="user">
+												<a href="#">
+													<div class="avatar avatar-away">
+														<img src="../assets/img/talha.jpg" alt="..." class="avatar-img rounded-circle border border-white">
+													</div>
+													<div class="user-data2">
+														<span class="name">Talha</span>
+														<span class="status">Away</span>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="messages-wrapper">
+							<div class="messages-title">
+								<div class="user">
+									<div class="avatar avatar-offline float-right ml-2">
+										<img src="../assets/img/chadengle.jpg" alt="..." class="avatar-img rounded-circle border border-white">
+									</div>
+									<span class="name">Chad</span>
+									<span class="last-active">Active 2h ago</span>
+								</div>
+								<button class="return">
+									<i class="flaticon-left-arrow-3"></i>
+								</button>
+							</div>
+							<div class="messages-body messages-scroll scrollbar-outer">
+								<div class="message-content-wrapper">
+									<div class="message message-in">
+										<div class="avatar avatar-sm">
+											<img src="../assets/img/chadengle.jpg" alt="..." class="avatar-img rounded-circle border border-white">
+										</div>
+										<div class="message-body">
+											<div class="message-content">
+												<div class="name">Chad</div>
+												<div class="content">Hello, Rian</div>
+											</div>
+											<div class="date">12.31</div>
+										</div>
+									</div>
+								</div>
+								<div class="message-content-wrapper">
+									<div class="message message-out">
+										<div class="message-body">
+											<div class="message-content">
+												<div class="content">
+													Hello, Chad
+												</div>
+											</div>
+											<div class="message-content">
+												<div class="content">
+													What's up?
+												</div>
+											</div>
+											<div class="date">12.35</div>
+										</div>
+									</div>
+								</div>
+								<div class="message-content-wrapper">
+									<div class="message message-in">
+										<div class="avatar avatar-sm">
+											<img src="../assets/img/chadengle.jpg" alt="..." class="avatar-img rounded-circle border border-white">
+										</div>
+										<div class="message-body">
+											<div class="message-content">
+												<div class="name">Chad</div>
+												<div class="content">
+													Thanks
+												</div>
+											</div>
+											<div class="message-content">
+												<div class="content">
+													When is the deadline of the project we are working on ?
+												</div>
+											</div>
+											<div class="date">13.00</div>
+										</div>
+									</div>
+								</div>
+								<div class="message-content-wrapper">
+									<div class="message message-out">
+										<div class="message-body">
+											<div class="message-content">
+												<div class="content">
+													The deadline is about 2 months away
+												</div>
+											</div>
+											<div class="date">13.10</div>
+										</div>
+									</div>
+								</div>
+								<div class="message-content-wrapper">
+									<div class="message message-in">
+										<div class="avatar avatar-sm">
+											<img src="../assets/img/chadengle.jpg" alt="..." class="avatar-img rounded-circle border border-white">
+										</div>
+										<div class="message-body">
+											<div class="message-content">
+												<div class="name">Chad</div>
+												<div class="content">
+													Ok, Thanks !
+												</div>
+											</div>
+											<div class="date">13.15</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="messages-form">
+								<div class="messages-form-control">
+									<input type="text" placeholder="Type here" class="form-control input-pill input-solid message-input">
+								</div>
+								<div class="messages-form-tool">
+									<a href="#" class="attachment">
+										<i class="flaticon-file"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="tasks" role="tabpanel">
+						<div class="quick-wrapper tasks-wrapper">
+							<div class="tasks-scroll scrollbar-outer">
+								<div class="tasks-content">
+									<span class="category-title mt-0">Today</span>
+									<ul class="tasks-list">
+										<li>
+											<label class="custom-checkbox custom-control checkbox-secondary">
+												<input type="checkbox" checked="" class="custom-control-input"><span class="custom-control-label">Planning new project structure</span>
+												<span class="task-action">
+													<a href="#" class="link text-danger">
+														<i class="flaticon-interface-5"></i>
+													</a>
+												</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-checkbox custom-control checkbox-secondary">
+												<input type="checkbox" class="custom-control-input"><span class="custom-control-label">Create the main structure							</span>
+												<span class="task-action">
+													<a href="#" class="link text-danger">
+														<i class="flaticon-interface-5"></i>
+													</a>
+												</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-checkbox custom-control checkbox-secondary">
+												<input type="checkbox" class="custom-control-input"><span class="custom-control-label">Add new Post</span>
+												<span class="task-action">
+													<a href="#" class="link text-danger">
+														<i class="flaticon-interface-5"></i>
+													</a>
+												</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-checkbox custom-control checkbox-secondary">
+												<input type="checkbox" class="custom-control-input"><span class="custom-control-label">Finalise the design proposal</span>
+												<span class="task-action">
+													<a href="#" class="link text-danger">
+														<i class="flaticon-interface-5"></i>
+													</a>
+												</span>
+											</label>
+										</li>
+									</ul>
+
+									<span class="category-title">Tomorrow</span>
+									<ul class="tasks-list">
+										<li>
+											<label class="custom-checkbox custom-control checkbox-secondary">
+												<input type="checkbox" class="custom-control-input"><span class="custom-control-label">Initialize the project							</span>
+												<span class="task-action">
+													<a href="#" class="link text-danger">
+														<i class="flaticon-interface-5"></i>
+													</a>
+												</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-checkbox custom-control checkbox-secondary">
+												<input type="checkbox" class="custom-control-input"><span class="custom-control-label">Create the main structure							</span>
+												<span class="task-action">
+													<a href="#" class="link text-danger">
+														<i class="flaticon-interface-5"></i>
+													</a>
+												</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-checkbox custom-control checkbox-secondary">
+												<input type="checkbox" class="custom-control-input"><span class="custom-control-label">Updates changes to GitHub							</span>
+												<span class="task-action">
+													<a href="#" class="link text-danger">
+														<i class="flaticon-interface-5"></i>
+													</a>
+												</span>
+											</label>
+										</li>
+										<li>
+											<label class="custom-checkbox custom-control checkbox-secondary">
+												<input type="checkbox" class="custom-control-input"><span title="This task is too long to be displayed in a normal space!" class="custom-control-label">This task is too long to be displayed in a normal space!				</span>
+												<span class="task-action">
+													<a href="#" class="link text-danger">
+														<i class="flaticon-interface-5"></i>
+													</a>
+												</span>
+											</label>
+										</li>
+									</ul>
+
+									<div class="mt-3">
+										<div class="btn btn-primary btn-rounded btn-sm">
+											<span class="btn-label">
+												<i class="fa fa-plus"></i>
+											</span>
+											Add Task
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="settings" role="tabpanel">
+						<div class="quick-wrapper settings-wrapper">
+							<div class="quick-scroll scrollbar-outer">
+								<div class="quick-content settings-content">
+
+									<span class="category-title mt-0">General Settings</span>
+									<ul class="settings-list">
+										<li>
+											<span class="item-label">Enable Notifications</span>
+											<div class="item-control">
+												<input type="checkbox" checked data-toggle="toggle" data-onstyle="primary" data-style="btn-round">
+											</div>
+										</li>
+										<li>
+											<span class="item-label">Signin with social media</span>
+											<div class="item-control">
+												<input type="checkbox" data-toggle="toggle" data-onstyle="primary" data-style="btn-round">
+											</div>
+										</li>
+										<li>
+											<span class="item-label">Backup storage</span>
+											<div class="item-control">
+												<input type="checkbox" data-toggle="toggle" data-onstyle="primary" data-style="btn-round">
+											</div>
+										</li>
+										<li>
+											<span class="item-label">SMS Alert</span>
+											<div class="item-control">
+												<input type="checkbox" checked data-toggle="toggle" data-onstyle="primary" data-style="btn-round">
+											</div>
+										</li>
+									</ul>
+
+									<span class="category-title mt-0">Notifications</span>
+									<ul class="settings-list">
+										<li>
+											<span class="item-label">Email Notifications</span>
+											<div class="item-control">
+												<input type="checkbox" checked data-toggle="toggle" data-onstyle="primary" data-style="btn-round">
+											</div>
+										</li>
+										<li>
+											<span class="item-label">New Comments</span>
+											<div class="item-control">
+												<input type="checkbox" checked data-toggle="toggle" data-onstyle="primary" data-style="btn-round">
+											</div>
+										</li>
+										<li>
+											<span class="item-label">Chat Messages</span>
+											<div class="item-control">
+												<input type="checkbox" checked data-toggle="toggle" data-onstyle="primary" data-style="btn-round">
+											</div>
+										</li>
+										<li>
+											<span class="item-label">Project Updates</span>
+											<div class="item-control">
+												<input type="checkbox" data-toggle="toggle" data-onstyle="primary" data-style="btn-round">
+											</div>
+										</li>
+										<li>
+											<span class="item-label">New Tasks</span>
+											<div class="item-control">
+												<input type="checkbox" checked data-toggle="toggle" data-onstyle="primary" data-style="btn-round">
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Custom template | don't include it in your project! -->
+		<div class="custom-template">
+			<div class="title">Settings</div>
+			<div class="custom-content">
+				<div class="switcher">
+					<div class="switch-block">
+						<h4>Logo Header</h4>
+						<div class="btnSwitch">
+							<button type="button" class="changeLogoHeaderColor" data-color="dark"></button>
+							<button type="button" class="changeLogoHeaderColor" data-color="blue"></button>
+							<button type="button" class="changeLogoHeaderColor" data-color="purple"></button>
+							<button type="button" class="changeLogoHeaderColor" data-color="light-blue"></button>
+							<button type="button" class="changeLogoHeaderColor" data-color="green"></button>
+							<button type="button" class="changeLogoHeaderColor" data-color="orange"></button>
+							<button type="button" class="changeLogoHeaderColor" data-color="red"></button>
+							<button type="button" class="changeLogoHeaderColor" data-color="white"></button>
+							<br/>
+							<button type="button" class="selected changeLogoHeaderColor" data-color="dark2"></button>
+							<button type="button" class="changeLogoHeaderColor" data-color="blue2"></button>
+							<button type="button" class="changeLogoHeaderColor" data-color="purple2"></button>
+							<button type="button" class="changeLogoHeaderColor" data-color="light-blue2"></button>
+							<button type="button" class="changeLogoHeaderColor" data-color="green2"></button>
+							<button type="button" class="changeLogoHeaderColor" data-color="orange2"></button>
+							<button type="button" class="changeLogoHeaderColor" data-color="red2"></button>
+						</div>
+					</div>
+					<div class="switch-block">
+						<h4>Navbar Header</h4>
+						<div class="btnSwitch">
+							<button type="button" class="selected changeTopBarColor" data-color="dark"></button>
+							<button type="button" class="changeTopBarColor" data-color="blue"></button>
+							<button type="button" class="changeTopBarColor" data-color="purple"></button>
+							<button type="button" class="changeTopBarColor" data-color="light-blue"></button>
+							<button type="button" class="changeTopBarColor" data-color="green"></button>
+							<button type="button" class="changeTopBarColor" data-color="orange"></button>
+							<button type="button" class="changeTopBarColor" data-color="red"></button>
+							<button type="button" class="changeTopBarColor" data-color="white"></button>
+							<br/>
+							<button type="button" class="changeTopBarColor" data-color="dark2"></button>
+							<button type="button" class="changeTopBarColor" data-color="blue2"></button>
+							<button type="button" class="changeTopBarColor" data-color="purple2"></button>
+							<button type="button" class="changeTopBarColor" data-color="light-blue2"></button>
+							<button type="button" class="changeTopBarColor" data-color="green2"></button>
+							<button type="button" class="changeTopBarColor" data-color="orange2"></button>
+							<button type="button" class="changeTopBarColor" data-color="red2"></button>
+						</div>
+					</div>
+					<div class="switch-block">
+						<h4>Sidebar</h4>
+						<div class="btnSwitch">
+							<button type="button" class="changeSideBarColor" data-color="white"></button>
+							<button type="button" class="changeSideBarColor" data-color="dark"></button>
+							<button type="button" class="selected changeSideBarColor" data-color="dark2"></button>
+						</div>
+					</div>
+					<div class="switch-block">
+						<h4>Background</h4>
+						<div class="btnSwitch">
+							<button type="button" class="changeBackgroundColor" data-color="bg2"></button>
+							<button type="button" class="changeBackgroundColor selected" data-color="bg1"></button>
+							<button type="button" class="changeBackgroundColor" data-color="bg3"></button>
+							<button type="button" class="selected changeBackgroundColor" data-color="dark"></button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="custom-toggle">
+				<i class="flaticon-settings"></i>
+			</div>
+		</div>
+		<!-- End Custom template -->
+	</div>
+	<!--   Core JS Files   -->
+	<script src="../assets/js/core/jquery.3.2.1.min.js"></script>
+	<script src="../assets/js/core/popper.min.js"></script>
+	<script src="../assets/js/core/bootstrap.min.js"></script>
+
+	<!-- jQuery UI -->
+	<script src="../assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+	<script src="../assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+
+	<!-- jQuery Scrollbar -->
+	<script src="../assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+
+	<!-- Moment JS -->
+	<script src="../assets/js/plugin/moment/moment.min.js"></script>
+
+	<!-- Chart JS -->
+	<script src="../assets/js/plugin/chart.js/chart.min.js"></script>
+
+	<!-- jQuery Sparkline -->
+	<script src="../assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+
+	<!-- Chart Circle -->
+	<script src="../assets/js/plugin/chart-circle/circles.min.js"></script>
+
+	<!-- Datatables -->
+	<script src="../assets/js/plugin/datatables/datatables.min.js"></script>
+
+	<!-- Bootstrap Notify -->
+	<script src="../assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+
+	<!-- Bootstrap Toggle -->
+	<script src="../assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+
+	<!-- jQuery Vector Maps -->
+	<script src="../assets/js/plugin/jqvmap/jquery.vmap.min.js"></script>
+	<script src="../assets/js/plugin/jqvmap/maps/jquery.vmap.world.js"></script>
+
+	<!-- Google Maps Plugin -->
+	<script src="../assets/js/plugin/gmaps/gmaps.js"></script>
+
+	<!-- Dropzone -->
+	<script src="../assets/js/plugin/dropzone/dropzone.min.js"></script>
+
+	<!-- Fullcalendar -->
+	<script src="../assets/js/plugin/fullcalendar/fullcalendar.min.js"></script>
+
+	<!-- DateTimePicker -->
+	<script src="../assets/js/plugin/datepicker/bootstrap-datetimepicker.min.js"></script>
+
+	<!-- Bootstrap Tagsinput -->
+	<script src="../assets/js/plugin/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
+
+	<!-- Bootstrap Wizard -->
+	<script src="../assets/js/plugin/bootstrap-wizard/bootstrapwizard.js"></script>
+
+	<!-- jQuery Validation -->
+	<script src="../assets/js/plugin/jquery.validate/jquery.validate.min.js"></script>
+
+	<!-- Summernote -->
+	<script src="../assets/js/plugin/summernote/summernote-bs4.min.js"></script>
+
+	<!-- Select2 -->
+	<script src="../assets/js/plugin/select2/select2.full.min.js"></script>
+
+	<!-- Sweet Alert -->
+	<script src="../assets/js/plugin/sweetalert/sweetalert.min.js"></script>
+
+	<!-- Owl Carousel -->
+	<script src="../assets/js/plugin/owl-carousel/owl.carousel.min.js"></script>
+
+	<!-- Magnific Popup -->
+	<script src="../assets/js/plugin/jquery.magnific-popup/jquery.magnific-popup.min.js"></script>
+
+	<!-- Atlantis JS -->
+	<script src="../assets/js/atlantis.min.js"></script>
+
+	<!-- jQuery Scrollbar -->
+	<script src="../../assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+
+	<!-- Atlantis DEMO methods, don't include it in your project! -->
+	<script src="../../assets/js/setting-demo2.js"></script>
+
+	<!-- Atlantis DEMO methods, don't include it in your project! -->
+	<script src="../assets/js/setting-demo.js"></script>
+	<script src="../assets/js/demo.js"></script>
+
+	<script src="../assets/js/jquery.fancybox.min.js"></script>
+	<script>
+		$('#lineChart').sparkline([102,109,120,99,110,105,115], {
+			type: 'line',
+			height: '70',
+			width: '100%',
+			lineWidth: '2',
+			lineColor: 'rgba(255, 255, 255, .5)',
+			fillColor: 'rgba(255, 255, 255, .15)'
+		});
+
+		$('#lineChart2').sparkline([99,125,122,105,110,124,115], {
+			type: 'line',
+			height: '70',
+			width: '100%',
+			lineWidth: '2',
+			lineColor: 'rgba(255, 255, 255, .5)',
+			fillColor: 'rgba(255, 255, 255, .15)'
+		});
+
+		$('#lineChart3').sparkline([105,103,123,100,95,105,115], {
+			type: 'line',
+			height: '70',
+			width: '100%',
+			lineWidth: '2',
+			lineColor: 'rgba(255, 255, 255, .5)',
+			fillColor: 'rgba(255, 255, 255, .15)'
+		});
+
+		var pieChart = document.getElementById('pieChart').getContext('2d'),
+			doughnutChart = document.getElementById('doughnutChart').getContext('2d');
+			
+			// lineChart = document.getElementById('lineChart').getContext('2d'),
+			// barChart = document.getElementById('barChart').getContext('2d'),
+			
+			// radarChart = document.getElementById('radarChart').getContext('2d'),
+			// bubbleChart = document.getElementById('bubbleChart').getContext('2d'),
+			// multipleLineChart = document.getElementById('multipleLineChart').getContext('2d'),
+			// multipleBarChart = document.getElementById('multipleBarChart').getContext('2d'),
+			// htmlLegendsChart = document.getElementById('htmlLegendsChart').getContext('2d');
+	
+			// var myLineChart = new Chart(lineChart, {
+			// 	type: 'line',
+			// 	data: {
+			// 		labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+			// 		datasets: [{
+			// 			label: "Active Users",
+			// 			borderColor: "#1d7af3",
+			// 			pointBorderColor: "#FFF",
+			// 			pointBackgroundColor: "#1d7af3",
+			// 			pointBorderWidth: 2,
+			// 			pointHoverRadius: 4,
+			// 			pointHoverBorderWidth: 1,
+			// 			pointRadius: 4,
+			// 			backgroundColor: 'transparent',
+			// 			fill: true,
+			// 			borderWidth: 2,
+			// 			data: [542, 480, 430, 550, 530, 453, 380, 434, 568, 610, 700, 900]
+			// 		}]
+			// 	},
+			// 	options : {
+			// 		responsive: true, 
+			// 		maintainAspectRatio: false,
+			// 		legend: {
+			// 			position: 'bottom',
+			// 			labels : {
+			// 				padding: 10,
+			// 				fontColor: '#1d7af3',
+			// 			}
+			// 		},
+			// 		tooltips: {
+			// 			bodySpacing: 4,
+			// 			mode:"nearest",
+			// 			intersect: 0,
+			// 			position:"nearest",
+			// 			xPadding:10,
+			// 			yPadding:10,
+			// 			caretPadding:10
+			// 		},
+			// 		layout:{
+			// 			padding:{left:15,right:15,top:15,bottom:15}
+			// 		}
+			// 	}
+			// });
+	
+			// var myBarChart = new Chart(barChart, {
+			// 	type: 'bar',
+			// 	data: {
+			// 		labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+			// 		datasets : [{
+			// 			label: "Sales",
+			// 			backgroundColor: 'rgb(23, 125, 255)',
+			// 			borderColor: 'rgb(23, 125, 255)',
+			// 			data: [3, 2, 9, 5, 4, 6, 4, 6, 7, 8, 7, 4],
+			// 		}],
+			// 	},
+			// 	options: {
+			// 		responsive: true, 
+			// 		maintainAspectRatio: false,
+			// 		scales: {
+			// 			yAxes: [{
+			// 				ticks: {
+			// 					beginAtZero:true
+			// 				}
+			// 			}]
+			// 		},
+			// 	}
+			// });
+	
+			var myPieChart = new Chart(pieChart, {
+				type: 'pie',
+				data: {
+					datasets: [{
+						data: [100],
+						backgroundColor :["#1d7af3"],
+						borderWidth: 0
+					}],
+					labels: ['Recived Amount: 0.60 Lac'] 
+				},
+				options : {
+					responsive: true, 
+					maintainAspectRatio: false,
+					legend: {
+						position : 'bottom',
+						labels : {
+							fontColor: 'rgb(154, 154, 154)',
+							fontSize: 11,
+							usePointStyle : true,
+							padding: 20
+						}
+					},
+					pieceLabel: {
+						render: 'percentage',
+						fontColor: 'white',
+						fontSize: 14,
+					},
+					tooltips: false,
+					layout: {
+						padding: {
+							left: 20,
+							right: 20,
+							top: 20,
+							bottom: 20
+						}
+					}
+				}
+			})
+	
+			var myDoughnutChart = new Chart(doughnutChart, {
+				type: 'doughnut',
+				data: {
+					datasets: [{
+						data: [100],
+						backgroundColor: ['#f3545d',]
+					}],
+	
+					labels: [
+					'Project Completed & Map Submitted',
+					
+					]
+				},
+				options: {
+					responsive: true, 
+					maintainAspectRatio: false,
+					legend : {
+						position: 'bottom'
+					},
+					layout: {
+						padding: {
+							left: 20,
+							right: 20,
+							top: 20,
+							bottom: 20
+						}
+					}
+				}
+			});
+	
+			var myRadarChart = new Chart(radarChart, {
+				type: 'radar',
+				data: {
+					labels: ['Running', 'Swimming', 'Eating', 'Cycling', 'Jumping'],
+					datasets: [{
+						data: [20, 10, 30, 2, 30],
+						borderColor: '#1d7af3',
+						backgroundColor : 'rgba(29, 122, 243, 0.25)',
+						pointBackgroundColor: "#1d7af3",
+						pointHoverRadius: 4,
+						pointRadius: 3,
+						label: 'Team 1'
+					}, {
+						data: [10, 20, 15, 30, 22],
+						borderColor: '#716aca',
+						backgroundColor: 'rgba(113, 106, 202, 0.25)',
+						pointBackgroundColor: "#716aca",
+						pointHoverRadius: 4,
+						pointRadius: 3,
+						label: 'Team 2'
+					},
+					]
+				},
+				options : {
+					responsive: true, 
+					maintainAspectRatio: false,
+					legend : {
+						position: 'bottom'
+					}
+				}
+			});
+	
+			var myBubbleChart = new Chart(bubbleChart,{
+				type: 'bubble',
+				data: {
+					datasets:[{
+						label: "Car", 
+						data:[{x:25,y:17,r:25},{x:30,y:25,r:28}, {x:35,y:30,r:8}], 
+						backgroundColor:"#716aca"
+					},
+					{
+						label: "Motorcycles", 
+						data:[{x:10,y:17,r:20},{x:30,y:10,r:7}, {x:35,y:20,r:10}], 
+						backgroundColor:"#1d7af3"
+					}],
+				},
+				options: {
+					responsive: true, 
+					maintainAspectRatio: false,
+					legend: {
+						position: 'bottom'
+					},
+					scales: {
+						yAxes: [{
+							ticks: {
+								beginAtZero:true
+							}
+						}],
+						xAxes: [{
+							ticks: {
+								beginAtZero:true
+							}
+						}]
+					},
+				}
+			});
+	
+			var myMultipleLineChart = new Chart(multipleLineChart, {
+				type: 'line',
+				data: {
+					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+					datasets: [{
+						label: "Python",
+						borderColor: "#1d7af3",
+						pointBorderColor: "#FFF",
+						pointBackgroundColor: "#1d7af3",
+						pointBorderWidth: 2,
+						pointHoverRadius: 4,
+						pointHoverBorderWidth: 1,
+						pointRadius: 4,
+						backgroundColor: 'transparent',
+						fill: true,
+						borderWidth: 2,
+						data: [30, 45, 45, 68, 69, 90, 100, 158, 177, 200, 245, 256]
+					},{
+						label: "PHP",
+						borderColor: "#59d05d",
+						pointBorderColor: "#FFF",
+						pointBackgroundColor: "#59d05d",
+						pointBorderWidth: 2,
+						pointHoverRadius: 4,
+						pointHoverBorderWidth: 1,
+						pointRadius: 4,
+						backgroundColor: 'transparent',
+						fill: true,
+						borderWidth: 2,
+						data: [10, 20, 55, 75, 80, 48, 59, 55, 23, 107, 60, 87]
+					}, {
+						label: "Ruby",
+						borderColor: "#f3545d",
+						pointBorderColor: "#FFF",
+						pointBackgroundColor: "#f3545d",
+						pointBorderWidth: 2,
+						pointHoverRadius: 4,
+						pointHoverBorderWidth: 1,
+						pointRadius: 4,
+						backgroundColor: 'transparent',
+						fill: true,
+						borderWidth: 2,
+						data: [10, 30, 58, 79, 90, 105, 117, 160, 185, 210, 185, 194]
+					}]
+				},
+				options : {
+					responsive: true, 
+					maintainAspectRatio: false,
+					legend: {
+						position: 'top',
+					},
+					tooltips: {
+						bodySpacing: 4,
+						mode:"nearest",
+						intersect: 0,
+						position:"nearest",
+						xPadding:10,
+						yPadding:10,
+						caretPadding:10
+					},
+					layout:{
+						padding:{left:15,right:15,top:15,bottom:15}
+					}
+				}
+			});
+	
+			var myMultipleBarChart = new Chart(multipleBarChart, {
+				type: 'bar',
+				data: {
+					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+					datasets : [{
+						label: "First time visitors",
+						backgroundColor: '#59d05d',
+						borderColor: '#59d05d',
+						data: [95, 100, 112, 101, 144, 159, 178, 156, 188, 190, 210, 245],
+					},{
+						label: "Visitors",
+						backgroundColor: '#fdaf4b',
+						borderColor: '#fdaf4b',
+						data: [145, 256, 244, 233, 210, 279, 287, 253, 287, 299, 312,356],
+					}, {
+						label: "Pageview",
+						backgroundColor: '#177dff',
+						borderColor: '#177dff',
+						data: [185, 279, 273, 287, 234, 312, 322, 286, 301, 320, 346, 399],
+					}],
+				},
+				options: {
+					responsive: true, 
+					maintainAspectRatio: false,
+					legend: {
+						position : 'bottom'
+					},
+					title: {
+						display: true,
+						text: 'Traffic Stats'
+					},
+					tooltips: {
+						mode: 'index',
+						intersect: false
+					},
+					responsive: true,
+					scales: {
+						xAxes: [{
+							stacked: true,
+						}],
+						yAxes: [{
+							stacked: true
+						}]
+					}
+				}
+			});
+	
+			// Chart with HTML Legends
+	
+			var gradientStroke = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+			gradientStroke.addColorStop(0, '#177dff');
+			gradientStroke.addColorStop(1, '#80b6f4');
+	
+			var gradientFill = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+			gradientFill.addColorStop(0, "rgba(23, 125, 255, 0.7)");
+			gradientFill.addColorStop(1, "rgba(128, 182, 244, 0.3)");
+	
+			var gradientStroke2 = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+			gradientStroke2.addColorStop(0, '#f3545d');
+			gradientStroke2.addColorStop(1, '#ff8990');
+	
+			var gradientFill2 = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+			gradientFill2.addColorStop(0, "rgba(243, 84, 93, 0.7)");
+			gradientFill2.addColorStop(1, "rgba(255, 137, 144, 0.3)");
+	
+			var gradientStroke3 = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+			gradientStroke3.addColorStop(0, '#fdaf4b');
+			gradientStroke3.addColorStop(1, '#ffc478');
+	
+			var gradientFill3 = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+			gradientFill3.addColorStop(0, "rgba(253, 175, 75, 0.7)");
+			gradientFill3.addColorStop(1, "rgba(255, 196, 120, 0.3)");
+	
+			var myHtmlLegendsChart = new Chart(htmlLegendsChart, {
+				type: 'line',
+				data: {
+					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+					datasets: [ {
+						label: "Subscribers",
+						borderColor: gradientStroke2,
+						pointBackgroundColor: gradientStroke2,
+						pointRadius: 0,
+						backgroundColor: gradientFill2,
+						legendColor: '#f3545d',
+						fill: true,
+						borderWidth: 1,
+						data: [154, 184, 175, 203, 210, 231, 240, 278, 252, 312, 320, 374]
+					}, {
+						label: "New Visitors",
+						borderColor: gradientStroke3,
+						pointBackgroundColor: gradientStroke3,
+						pointRadius: 0,
+						backgroundColor: gradientFill3,
+						legendColor: '#fdaf4b',
+						fill: true,
+						borderWidth: 1,
+						data: [256, 230, 245, 287, 240, 250, 230, 295, 331, 431, 456, 521]
+					}, {
+						label: "Active Users",
+						borderColor: gradientStroke,
+						pointBackgroundColor: gradientStroke,
+						pointRadius: 0,
+						backgroundColor: gradientFill,
+						legendColor: '#177dff',
+						fill: true,
+						borderWidth: 1,
+						data: [542, 480, 430, 550, 530, 453, 380, 434, 568, 610, 700, 900]
+					}]
+				},
+				options : {
+					responsive: true, 
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					tooltips: {
+						bodySpacing: 4,
+						mode:"nearest",
+						intersect: 0,
+						position:"nearest",
+						xPadding:10,
+						yPadding:10,
+						caretPadding:10
+					},
+					layout:{
+						padding:{left:15,right:15,top:15,bottom:15}
+					},
+					scales: {
+						yAxes: [{
+							ticks: {
+								fontColor: "rgba(0,0,0,0.5)",
+								fontStyle: "500",
+								beginAtZero: false,
+								maxTicksLimit: 5,
+								padding: 20
+							},
+							gridLines: {
+								drawTicks: false,
+								display: false
+							}
+						}],
+						xAxes: [{
+							gridLines: {
+								zeroLineColor: "transparent"
+							},
+							ticks: {
+								padding: 20,
+								fontColor: "rgba(0,0,0,0.5)",
+								fontStyle: "500"
+							}
+						}]
+					}, 
+					legendCallback: function(chart) { 
+						var text = []; 
+						text.push('<ul class="' + chart.id + '-legend html-legend">'); 
+						for (var i = 0; i < chart.data.datasets.length; i++) { 
+							text.push('<li><span style="background-color:' + chart.data.datasets[i].legendColor + '"></span>'); 
+							if (chart.data.datasets[i].label) { 
+								text.push(chart.data.datasets[i].label); 
+							} 
+							text.push('</li>'); 
+						} 
+						text.push('</ul>'); 
+						return text.join(''); 
+					}  
+				}
+			});
+	
+			var myLegendContainer = document.getElementById("myChartLegend");
+	
+			// generate HTML legend
+			myLegendContainer.innerHTML = myHtmlLegendsChart.generateLegend();
+	
+			// bind onClick event to all LI-tags of the legend
+			var legendItems = myLegendContainer.getElementsByTagName('li');
+			for (var i = 0; i < legendItems.length; i += 1) {
+				legendItems[i].addEventListener("click", legendClickCallback, false);
+			}
+	
+			
+
+
+	</script>
+	<script>
+		$(function () {
+			var options = {
+
+			};
+
+			$(".fancybox-thumbs").attr("data-fancybox-group","thumb")
+			$(".fancybox-thumbs").fancybox({
+				padding: 0,
+				openEffect: 'elastic',
+				openSpeed: 150,
+				closeEffect: 'elastic',
+				closeSpeed: 150,
+				prevEffect: 'none',
+				nextEffect: 'none',
+				closeBtn: true,
+				arrows: true,
+				pixelRatio: 1, // Set to 2 for retina display support
+				aspectRatio: true,
+				/*afterLoad  : function () {
+				$.extend(this, {
+				aspectRatio : true,
+				type    : 'html',
+				width   : '100%',
+				height  : '100%',
+				content : '<div class="fancybox-image" style="background-image:url(' + this.href + '); background-size: cover; background-position:50% 50%;background-repeat:no-repeat;height:100%;width:100%;" /></div>'
+				});
+				},*/
+				helpers: {
+					title: {
+						type: 'inside'
+					},
+					overlay: {
+						showEarly: false
+					}
+				}
+			});
+	 
+		});
+   </script>
+		
+</body>
+
+<!-- Mirrored from demo.themekita.com/atlantis/livepreview/examples/demo2/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 17 Sep 2020 10:46:47 GMT -->
+</html>
